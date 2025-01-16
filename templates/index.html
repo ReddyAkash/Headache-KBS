@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headache Detection Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Headache Detection Chatbot</h1>
+        <form id="chatForm">
+            <label for="symptoms">Enter Symptoms:</label>
+            <textarea id="symptoms" rows="4" cols="50" placeholder="e.g., severe pain in one side of the head, nausea"></textarea>
+            <br>
+            <button type="submit">Detect Headache Type</button>
+        </form>
+        <div id="response">
+            <!-- Response from Flask will be displayed here -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
